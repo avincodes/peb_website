@@ -1,0 +1,36 @@
+#notification-element
+{
+    position: fixed;
+    bottom: 50px;
+    left: calc(50vw - 210px);
+    text-align: center;
+    width: calc(100% - 20px);
+    max-width: 400px;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: #343434;
+    border-radius: 10px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    transform: translateY(200px);
+    cursor: pointer;
+    z-index: 1;
+}
+
+#notification-element a
+{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border-radius: unset;
+    color: #6ab8c6;
+}
+
+@media all and (max-width: 420px)
+{
+    #notification-element
+    {
+        left: 0;
+    }
+}
